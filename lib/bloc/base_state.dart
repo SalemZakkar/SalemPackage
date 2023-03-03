@@ -1,4 +1,4 @@
-import 'failure.dart';
+import '../models/failure.dart';
 
 enum BaseStatus { failure, loading, success, initial }
 
