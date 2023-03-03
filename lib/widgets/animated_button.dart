@@ -36,7 +36,9 @@ class _AnimatedButtonState extends State<AnimatedButton> {
           borderRadius: BorderRadius.circular(widget.radius ?? 25)),
       child: ElevatedButton(
         onPressed: () {
-          widget.onPressed.call();
+          if (!widget.loading) {
+            widget.onPressed.call();
+          }
         },
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(
