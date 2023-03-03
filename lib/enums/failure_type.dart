@@ -6,5 +6,6 @@ enum FailureType {
   regionError,
   invalidArguments,
   tokenExpired,
-  unAuth
+  unAuth,
+  notFound
 }
